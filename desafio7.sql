@@ -8,4 +8,4 @@ COUNT(t3.id_artista) AS seguidores
     INNER JOIN SpotifyClone.seguindo AS t3
 	ON t2.id_artista = t3.id_artista
 GROUP BY t1.nome_artista, t2.nome_album
-ORDER BY seguidores desc, artista;
+ORDER BY seguidores desc, artista, album;
